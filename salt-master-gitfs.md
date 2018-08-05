@@ -106,8 +106,10 @@ RSA key fingerprint is MD5:16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'github.com,192.30.255.112' (RSA) to the list of known hosts.
 PTY allocation request failed on channel 0
-Hi xthor0/salt-top! You've successfully authenticated, but GitHub does not provide shell access.
+Hi xthor0/salt! You've successfully authenticated, but GitHub does not provide shell access.
 ~~~
+
+If you don't SSH to your Git provider at least once, the connection will not work, as the connection will not be trusted.
 
 ## Test GitFS integration in SaltStack
 Restart the salt-master and then run this command:
