@@ -1,5 +1,13 @@
 # How to Set Up a Salt Master with GitFS
 
+## Why would I want to set this up?
+Unless you work in a really small shop (and, frankly, even if you do), using GitFS with Salt gives the following benefits:
+
+- Multiple developers no longer step on each other while developing states
+- States can be tested locally, pushed to a dev branch for wider testing, and finally promoted to production. More testing == better product
+- Git provides an awesome history of who did what - it'll be easier to determine who made changes, and when, in case something goes wrong
+- Finally, you can treat your configuration management like infrastructure as code - and automate a deployment pipeline with the appropriate testing and gates!
+
 ## Deploy your Salt master
 If you're building a new master, it's easier to use the bootstrap script from Salt. It does all the work for you.
 
@@ -113,11 +121,3 @@ salt-run fileserver.file_list saltenv=dev
 ~~~
 
 If you get no errors, congratulations! You can now start using your Salt master and deploying states with files pulled from Git.
-
-## Why would I want to set this up?
-Unless you work in a really small shop (and, frankly, even if you do), using GitFS with Salt gives the following benefits:
-
-- Multiple developers no longer step on each other while developing states
-- States can be tested locally, pushed to a dev branch for wider testing, and finally promoted to production. More testing == better product
-- Git provides an awesome history of who did what - it'll be easier to determine who made changes, and when, in case something goes wrong
-- Finally, you can treat your configuration management like infrastructure as code - and automate a deployment pipeline with the appropriate testing and gates!
