@@ -1,7 +1,7 @@
 # How to Set Up a Salt Master with GitFS
 
 ## Why would I want to set this up?
-Unless you work in a really small shop (and, frankly, even if you do), using GitFS with Salt gives the following benefits:
+Using GitFS with Salt gives the following benefits:
 
 - Multiple developers no longer step on each other while developing states
 - States can be tested locally, pushed to a dev branch for wider testing, and finally promoted to production. More testing == better product
