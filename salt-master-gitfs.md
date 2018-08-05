@@ -41,6 +41,8 @@ pillar_roots:
     - /srv/pillar/prod
 ~~~
 
+Be sure to restart the Salt master service.
+
 ## Set up your Git repository
 Clone the repo:
 ~~~
